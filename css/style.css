@@ -1,0 +1,83 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  
+ 
+
+ 
+  :root{
+  --purple: #6B4F84;
+  --brown: #594626; }
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  form {
+    font-size: 25px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 15px;
+    border: 1px solid var(--brown);
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #594626;
+    background: #BDD9C7;
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* background: #575294; */
+    color: #702082;
+  }
+
+  #name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border: 1px solid var(--brown);
+    border-radius: 16px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    background: var(--purple);
+    color: black;
+  }
+
+  #message {
+    border: 1px solid var(--brown);
+    border-radius: 16px;
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    border: 1px solid var(--brown);
+    border-radius: 16px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  input[type="submit"] {
+    border: 1px solid var(--brown);
+    border-radius: 16px;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid var(--brown);
+    border-radius: 16px;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+    border-width: 5px;
+
+  }
